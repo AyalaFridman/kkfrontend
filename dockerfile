@@ -1,20 +1,33 @@
+# FROM node:18-alpine
+
+# WORKDIR /app
+
+# COPY package.json ./
+
+# RUN npm install
+
+# COPY . .
+
+# # --host
+# CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0"]
+
+# השתמש בתמונה של Node.js (18, Alpine) שהיא קלה וכוללת את Node.js
 FROM node:18-alpine
 
+# הגדרת ספריית העבודה
 WORKDIR /app
 
-# העתקת package.json להתקנה מהירה של התלויות
-COPY package.json ./
+# העתקת קובץ package.json וקובץ package-lock.json (אם קיים)
+COPY package.json package-lock.json ./
 
+# התקנת התלויות
 RUN npm install
 
-# העתקת שאר הקבצים
+# העתקת כל שאר הקבצים
 COPY . .
 
-# בניית האפליקציה למצב פרודקשן (אם צריך)
-RUN npm run build
+# חשיפת הפורט שבו Vite מאזין (ברירת המחדל היא 5173)
+EXPOSE 5173
 
-# הצגת הפורט שבו האפליקציה תאזין
-EXPOSE 3000
-
-# הפעלת האפליקציה במצב פרודקשן
-CMD ["npm", "run", "start"]
+# הפעלת האפליקציה במצב פיתוח
+CMD ["npm", "run", "dev"]
