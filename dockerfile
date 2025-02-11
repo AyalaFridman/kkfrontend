@@ -12,7 +12,7 @@
 # CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0"]
 
 # השתמש בתמונה של Node.js (18, Alpine) שהיא קלה וכוללת את Node.js
-FROM node:18-alpine
+FROM node:20-alpine
 
 # הגדרת ספריית העבודה
 WORKDIR /app
