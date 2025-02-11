@@ -1,0 +1,100 @@
+[
+    {
+        "id": "1",
+        "last_name": "כהן",
+        "husband_name": "ישראל",
+        "husband_id":"123654789",
+        "wife_name": "שרה",
+        "wife_id":"987456321",
+        "marital_status": "נשוי",
+        "num_of_children": 4,
+        "num_of_minor_children": 3,
+        "children": [
+            {
+                "id": "123456789",
+                "birth_date": "01/01/2010"
+            },
+            {
+                "id": "987654321",
+                "birth_date": "15/03/2015"
+            }
+        ],
+        "address": {
+            "city": "תל אביב",
+            "street": "דיזנגוף",
+            "num": 25
+        },
+        "tel": "03-5556789",
+        "man_phone": "050-1234567",
+        "whoman_phone": "052-7654321",
+        "e-mail": "israel.cohen@example.com",
+        "bank-details": "בנק הפועלים, 12345",
+        "created-date": "01/02/2020"
+    },
+    {
+        "id": "2",
+        "last_name": "לוי",
+        "husband_name": "",
+        "husband_id":"",
+        "wife_name": "רחל",
+        "wife_id":"987456321",
+        "marital_status": "רווקה",
+        "num_of_children": 0,
+        "num_of_minor_children": 0,
+        "address": {
+            "city": "חיפה",
+            "street": "הרצל",
+            "num": 10
+        },
+        "tel": "04-5556789",
+        "man_phone": "",
+        "whoman_phone": "052-9876543",
+        "e-mail": "rachel.levi@example.com",
+        "bank-details": "בנק מזרחי טפחות, 67890",
+        "created-date": "05/10/2021"
+    },
+    {
+        "id": "3",
+        "last_name": "ברק",
+        "husband_name": "אברהם",
+        "husband_id":"123654789",
+        "wife_name": "מרים",
+        "wife_id":"987456321",
+        "marital_status": "אלמן",
+        "num_of_children": 2,
+        "num_of_minor_children": 1,
+        "address": {
+            "city": "ירושלים",
+            "street": "יפו",
+            "num": 7
+        },
+        "tel": "02-5556789",
+        "man_phone": "054-1239876",
+        "whoman_phone": "",
+        "e-mail": "avraham.barak@example.com",
+        "bank-details": "בנק דיסקונט, 54321",
+        "created-date": "11/15/2022"
+    },
+    {
+        "id": "4",
+        "last_name": "מזרחי",
+        "husband_name": "משה",
+        "husband_id":"123654789",
+        "wife_name": "חנה",
+        "wife_id":"987456321",
+        "marital_status": "גרושה",
+        "num_of_children": 3,
+        "num_of_minor_children": 2,
+        "address": {
+            "city": "באר שבע",
+            "street": "רוטשילד",
+            "num": 15
+        },
+        "tel": "08-5556789",
+        "man_phone": "052-7651234",
+        "whoman_phone": "053-3217654",
+        "e-mail": "hana.mizrahi@example.com",
+        "bank-details": "בנק לאומי, 98765",
+        "created-date": "08/20/2023"
+    }
+]
