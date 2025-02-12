@@ -2,7 +2,7 @@ import { makeObservable, runInAction, observable, computed, action } from "mobx"
 import Swal from "sweetalert2";
 
 // נתיב ה-API שלך
-const baseServerURL = "http://127.0.0.1:8000";
+const baseServerURL = "http://kkbackend-production.up.railway.app";
 const baseUrl = `${baseServerURL}/allocation/`;
 
 // פונקציה לעיבוד המידע
